@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Linq;
+
+namespace A
+{
+    class Customer : Person
+    {
+        public List<Book> BooksBorrowed { get; set; }
+
+        public Customer(string name, string address, string phoneNumber) : base(name, address, phoneNumber)
+        {
+            BooksBorrowed = new List<Book>();
+        }
+    }
+}
