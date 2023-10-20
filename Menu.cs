@@ -30,12 +30,11 @@ namespace A
                     option = Convert.ToInt32(Console.ReadLine());
                 } while (option < 1 || option > 4);
 
-                IMenu seMenu = null; //seMenu nó là bất cứ menu nào mà em truyền đối số cho nó thì nó sẽ hiện ra menu đó
+                IMenu seMenu = null;
                 switch (option)
                 {
                     case 1:
                         Console.Clear();
-                        //CustomerMenu customerMenu = new CustomerMenu();
                         seMenu = new CustomerMenu();
                         seMenu.SelectMenu();
                         break;
